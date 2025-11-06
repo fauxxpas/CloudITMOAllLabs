@@ -2,11 +2,11 @@
 
 Перед установкой nginx мне пришлось сначала установить менеджер пакетов Homebrew и утилиту Curl:
 
-![image](/1.bmp)
+![image](1.bmp)
 
 Затем наконец удалось установить nginx:
 
-![image](/2.bmp)
+![image](2.bmp)
 
 Затем я ввёл запустил nginx:
 
@@ -16,26 +16,26 @@ brew services start nginx
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx-selfsigned.key -out nginx-selfsigned.crt
 И заполнил ответы на вопросы данными моей фиктивной компании:
 
-![image](/3.bmp)
+![image](3.bmp)
 
 Файл конфигурации nginx у меня, почему-то не создался, я посмотрел в интернете и по совету со StackOverflow
 установил nginx-core, после чего файл появился: 
 
-![image](/4.bmp)
+![image](4.bmp)
 
 Затем я создал папки для файлов сайтов и создал сами сайты:
 
-![image](/5.bmp)
-![image](/6.bmp)
+![image](5.bmp)
+![image](6.bmp)
 
 Затем я создал серверы для сайтов со встроенной переадрисацией портов, чтобы выполнить условние задания
 и добавил внутрь подтягивание ключа из папки:
 
-![image](/7.bmp)
-![image](/8.bmp)
+![image](7.bmp)
+![image](8.bmp)
 
 Потом я внёс мои сайты в /etc/hosts:
 
-![image](/9.bmp)
+![image](9.bmp)
 
 Я перезагрузил nginx через brew services reload nginx, 
