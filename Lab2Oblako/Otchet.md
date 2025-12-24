@@ -8,8 +8,7 @@
 
 ![image](1.bmp)
 
-Используя знания, выработанные при выполнении Лабораторной работы №1, мы быстро смогли найти системы ценообразования на сайтах Microsoft. 
-Основной сайт, который мы использовали для большинства сервисов - https://azure.microsoft.com/en-us.
+Мы искали информацию на продуктовых страницах Майкрософт, уточняя различия между продуктами одной категории [по ссылке](https://azure.microsoft.com/en-us/pricing/).
 
 ![image](2.bmp)
 
@@ -18,24 +17,58 @@
 ---
 ## Сервисы
 
-1) Microsoft Azure Database for MySQL - сервис для выполнения SQL-запросов на базах данных. 
+### Microsoft Azure Database for MySQL
+MySQL-база данных в облаке. Регулярная репликация и бэкапы, автоматическое обновление версии и установка патчей. Простота масштабирования. 
 
-2) Microsoft Azure Databricks
+*Российский аналог: Arenadata Analytical DB, работающая под управлением РЕД ОС и Astra Linux*
 
-3) Microsoft Viva Insights
+### Microsoft Azure Databricks
+Платформа для аналитики и обработки больших данных на базе Apache Spark. Используется для ETL (Extract, Transform, Load), data engineering и машинного обучения, когда Excel и Python не справляются.
 
-4) Microsoft Azure Resource Manager
+*Российский аналог: Loginom*
 
-5) Microsoft Azure Data Factory
+### Microsoft Viva Insights
+Анализ временных затрат сотрудников на основе данных Microsoft 365. Замеряет длительность промежутков между встречами, количество встреч в календаре и проч. и на основе этих данных дает рекомендации менеджерам. 
 
-6) Microsoft Azure Data Lake Storage
+*Российский аналог: «МояКоманда» от разработчика ЦИТ Факт*
 
-7) Microsoft Azure Stream Analytics
+### Microsoft Azure Resource Manager (ARM)
+Управление ресурсами Azure. Шаблоны, политики, контроль доступа для IaC. Нужно для разграничения прав работников компании, сверки изменений, вносимых в код, описывающий сети и ресурсы, с заранее определенным шаблоном. 
 
-8) Microsoft Azure Cache for Redis
+*Российский аналог: Yandex Cloud Resource Manager*
 
-9) Azure CDN
+### Microsoft Azure Data Factory
+Инструмент для интеграции данных и построения ETL/ELT-пайплайнов. Перетаскивает данные между системами по расписанию и с минимальным участием человека.
 
-10) Compute Job Scheduling 
+*Российский аналог: «Фабрика данных» (Digital Q.DataFactory) от компании DiAsoft*
 
-11) Azure Virtual Machines
+
+### Microsoft Azure Data Lake Storage
+Объектное хранилище для больших объемов неструктурированных данных, оптимизированное под аналитику. Свалка логов, сырых данных и всего, что «потом разберем».
+
+*Российский аналог: Data Lakehouse в VK Cloud*
+
+### Microsoft Azure Stream Analytics
+Обработка потоковых данных, например, транзакций или событий сети в реальном времени с помощью SQL-подобных запросов. Компромисс между аналитической и транзакционной БД с задержкой в час-два. 
+
+*Российский аналог: Arenadata Streaming Platform (ADS) от компании Аренадата Софтвер*
+
+### Microsoft Azure Cache for Redis
+Управляемый Redis для кэширования и быстрого доступа к данным. Делает приложения быстрее и снижает нагрузку на базы.
+
+*Российский аналог: Yandex Managed Service for Redis, VK Cloud Redis*
+
+### Azure CDN
+Сеть доставки контента для ускорения загрузки статических файлов по всему миру. 
+
+*Российский аналог: Yandex CDN, VK Cloud CDN*
+
+### Azure Batch
+Сервисы для планирования и запуска вычислительных задач по расписанию или по событиям. 
+
+*Российский аналог: Yandex Cloud Functions + Yandex Cloud Scheduler, VK Cloud Functions + Scheduler*
+
+### Azure Virtual Machines
+Виртуальные серверы в облаке с полным контролем над ОС и окружением. 
+
+*Российский аналог: «Виртуальные серверы на базе VMware» от компании 1cloud*
